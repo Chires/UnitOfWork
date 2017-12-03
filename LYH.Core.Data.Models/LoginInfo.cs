@@ -10,9 +10,9 @@ namespace LYH.Core.Data.Models
     ///     登录信息类
     /// </summary>
     public class LoginInfo
-    {
+    { 
         /// <summary>
-        ///     获取或设置 登录账号
+        ///     获取或设置 登录账号  
         /// </summary>
         public string Access { get; set; }
           
