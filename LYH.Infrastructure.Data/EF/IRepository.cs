@@ -15,7 +15,7 @@ namespace LYH.Infrastructure.Data.EF
     public interface IRepository<TEntity> where TEntity : BaseEntity
     {
         #region 属性
-
+         
         /// <summary>
         ///     获取 当前实体的查询数据集
         /// </summary>
