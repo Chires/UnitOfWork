@@ -1,10 +1,5 @@
-﻿using LYH.Core.Data.Models;
+﻿using LYH.Database.Core.Data.Models;
 using LYH.Infrastructure.Data.EF;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LYH.Database.Core.Data.Repositories
 {

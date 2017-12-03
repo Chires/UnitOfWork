@@ -35,7 +35,7 @@ namespace LYH.Database.Core.Data.Models
         /// </summary>
         [Required]
         [StringLength(20)]
-        public string PassWord { get; set; }
+        public string Password { get; set; }
 
         /// <summary>
         /// 获取或设置 用户昵称

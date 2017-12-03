@@ -15,7 +15,7 @@ namespace LYH.Site.Core.Impl
     ///     账户模块站点业务实现
     /// </summary>
     [Export(typeof(IAccountSiteContract))]
-    public class AccountSiteService : AccountContract, IAccountSiteContract
+    public class AccountSiteContract : AccountContract, IAccountSiteContract
     {
         /// <summary>
         ///     用户登录

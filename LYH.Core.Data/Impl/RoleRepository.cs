@@ -9,5 +9,5 @@ namespace LYH.Database.Core.Data.Impl
     ///     仓储操作实现——角色信息
     /// </summary>
     [Export(typeof(IRoleRepository))]
-    public class RoleRepository : EFRepositoryBase<Role>, IRoleRepository { }
+    public abstract class RoleRepository : EFRepositoryBase<Role>, IRoleRepository { }
 }

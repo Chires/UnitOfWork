@@ -5,6 +5,7 @@ using LYH.Database.Core.Data.Models;
 using LYH.Database.Core;
 using System.ComponentModel.Composition;
 using LYH.Database.Core.Data.Repositories;
+using LYH.Database.Core.Data.Impl;
 
 namespace LYH.Application.Core.Impl
 {
@@ -13,6 +14,8 @@ namespace LYH.Application.Core.Impl
     /// </summary>
     public abstract class AccountContract : CoreServiceBase, IAccountContract
     {
+
+
         #region 受保护的属性
 
         /// <summary>
@@ -28,6 +31,13 @@ namespace LYH.Application.Core.Impl
         protected ILoginLogRepository LoginLogRepository { get; set; }
 
         #endregion
+
+
+        public AccountContract()
+        {
+            MemberRepository = new MemberRepository();
+            LoginLogRepository = new LoginLogRepository();
+        }
 
         /// <summary>
         /// 用户登录
@@ -46,7 +56,7 @@ namespace LYH.Application.Core.Impl
                 return new OperationResult(OperationResultType.QueryNull, "指定账号的用户不存在。");
             }
 
-            if (member.PassWord != loginInfo.Password)
+            if (member.Password != loginInfo.Password)
             {
                 return new OperationResult(OperationResultType.Warning, "登录密码不正确。");
             }

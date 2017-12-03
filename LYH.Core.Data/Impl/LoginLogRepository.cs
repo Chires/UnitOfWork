@@ -10,7 +10,7 @@ namespace LYH.Database.Core.Data.Impl
     ///     仓储操作实现——日志信息
     /// </summary>
     [Export(typeof(ILoginLogRepository))]
-    public abstract class LoginLogRepository : EFRepositoryBase<LoginLog>, ILoginLogRepository
+    public  class LoginLogRepository : EFRepositoryBase<LoginLog>, ILoginLogRepository
     {
     }
 }

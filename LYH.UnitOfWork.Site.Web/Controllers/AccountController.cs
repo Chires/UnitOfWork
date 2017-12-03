@@ -2,6 +2,7 @@
 using LYH.Infrastructure.Data.Commons.Extensions;
 using LYH.Infrastructure.Data.Commons.Operations;
 using LYH.Site.Core;
+using LYH.Site.Core.Impl;
 using System;
 using System.ComponentModel.Composition;
 using System.Web.Mvc;
@@ -14,7 +15,15 @@ namespace LYH.UnitOfWork.Site.Web.Controllers
         #region 属性
 
         [Import]
-        public IAccountSiteContract AccountContract { get; set; }
+        public IAccountSiteContract AccountSiteContract { get; set; }
+
+
+        public AccountController()
+        {
+            AccountSiteContract = new AccountSiteContract();
+        }
+
+
 
         #endregion
 
@@ -36,7 +45,7 @@ namespace LYH.UnitOfWork.Site.Web.Controllers
         {
             try
             {
-                OperationResult result = AccountContract.Login(model);
+                OperationResult result = AccountSiteContract.Login(model);
                 string msg = result.Message ?? result.ResultType.GetDescription();
                 if (result.ResultType == OperationResultType.Success)
                 {
@@ -58,7 +67,7 @@ namespace LYH.UnitOfWork.Site.Web.Controllers
             returnUrl = returnUrl ?? Url.Action("Index", "Home", new { area = "" });
             if (User.Identity.IsAuthenticated)
             {
-                AccountContract.Logout();
+                AccountSiteContract.Logout();
             }
             return Redirect(returnUrl);
         }
