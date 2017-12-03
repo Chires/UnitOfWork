@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace LYH.Core.Data.Models
+namespace LYH.Database.Core.Data.Models
 {
     /// <summary>
     ///     登录信息类

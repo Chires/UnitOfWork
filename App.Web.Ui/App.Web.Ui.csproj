@@ -280,9 +280,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LYH.Core\LYH.Core.csproj">
+    <ProjectReference Include="..\LYH.Core\LYH.Database.Core.csproj">
       <Project>{064A035E-A154-4AE2-8977-80AE43F894CC}</Project>
-      <Name>LYH.Core</Name>
+      <Name>LYH.Database.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5433454-6FDD-4B00-A8DB-913B0D7B08ED}</ProjectGuid>
+    <ProjectGuid>{68E51BE3-8ABF-4648-A802-6B0E54793E74}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LYH.Application.Core</RootNamespace>
-    <AssemblyName>LYH.Application.Core</AssemblyName>
+    <RootNamespace>LYH.Business.Core</RootNamespace>
+    <AssemblyName>LYH.Business.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,6 +33,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,12 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IAccountApplictionContract.cs" />
-    <Compile Include="IAccountContract.cs" />
-    <Compile Include="Impl\AccountContract.cs" />
+    <Compile Include="IAccountSiteContract.cs" />
+    <Compile Include="Impl\AccountSiteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LYH.Application.Core\LYH.Application.Core.csproj">
+      <Project>{C5433454-6FDD-4B00-A8DB-913B0D7B08ED}</Project>
+      <Name>LYH.Application.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LYH.Application.Models\LYH.Application.Models.csproj">
       <Project>{52F83F27-48E0-45A6-9160-F6B98F80C5AF}</Project>
       <Name>LYH.Application.Models</Name>
@@ -54,10 +58,6 @@
     <ProjectReference Include="..\LYH.Core.Data.Models\LYH.Database.Core.Data.Models.csproj">
       <Project>{9AB2142F-ADE0-406F-8DE7-4B5D4DAF05B5}</Project>
       <Name>LYH.Database.Core.Data.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LYH.Core.Data\LYH.Database.Core.Data.csproj">
-      <Project>{7122BDDD-1DDE-488C-BC7E-D4E43C67D45D}</Project>
-      <Name>LYH.Database.Core.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\LYH.Core\LYH.Database.Core.csproj">
       <Project>{064A035E-A154-4AE2-8977-80AE43F894CC}</Project>

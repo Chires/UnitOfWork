@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LYH.Core.Data.Repositories
+namespace LYH.Database.Core.Data.Repositories
 {
     /// <summary>
     ///     仓储操作接口——角色信息

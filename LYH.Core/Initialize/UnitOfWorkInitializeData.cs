@@ -1,12 +1,8 @@
-﻿using LYH.Core.Data.Models;
-using System;
+﻿using LYH.Database.Core.Data.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LYH.Core.Initialize
+namespace LYH.Database.Core.Initialize
 {
     public class UnitOfWorkInitializeData : CreateDatabaseIfNotExists<UnitOfWorkEntitiesDbContext>
     {

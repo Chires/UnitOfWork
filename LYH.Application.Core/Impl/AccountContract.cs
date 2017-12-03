@@ -1,19 +1,17 @@
-﻿using LYH.Application.Core;
-using LYH.Core;
-using LYH.Core.Data.Models;
-using LYH.Infrastructure.Data.Commons.Operations;
-using LYH.Core.Data.Repositories;
-using System.ComponentModel.Composition;
+﻿using LYH.Infrastructure.Data.Commons.Operations;
 using LYH.Infrastructure.Data.Commons.Helpers;
 using System.Linq;
+using LYH.Database.Core.Data.Models;
+using LYH.Database.Core;
+using System.ComponentModel.Composition;
+using LYH.Database.Core.Data.Repositories;
 
-namespace LYH.Application.Data
+namespace LYH.Application.Core.Impl
 {
-
     /// <summary>
     ///     账户模块核心业务实现
     /// </summary>
-    public abstract class AccountService : CoreServiceBase, IAccountContract
+    public abstract class AccountContract : CoreServiceBase, IAccountContract
     {
         #region 受保护的属性
 
@@ -54,8 +52,8 @@ namespace LYH.Application.Data
             }
 
             LoginLog loginLog = new LoginLog { IpAddress = loginInfo.IpAddress, Member = member };
-                         LoginLogRepository.Insert(loginLog);
-                         return new OperationResult(OperationResultType.Success, "登录成功。", member);
+            LoginLogRepository.Insert(loginLog);
+            return new OperationResult(OperationResultType.Success, "登录成功。", member);
         }
     }
 }

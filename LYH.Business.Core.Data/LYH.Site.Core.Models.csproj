@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D749B680-77D3-46DA-AF78-036E82CE729A}</ProjectGuid>
+    <ProjectGuid>{A27E472A-0EDC-4CD0-A85C-DE3E03A4984F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LYH.Application.Data</RootNamespace>
-    <AssemblyName>LYH.Application.Data</AssemblyName>
+    <RootNamespace>LYH.Business.Core.Data</RootNamespace>
+    <AssemblyName>LYH.Business.Core.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,30 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LYH.Application.Core\LYH.Application.Core.csproj">
-      <Project>{C5433454-6FDD-4B00-A8DB-913B0D7B08ED}</Project>
-      <Name>LYH.Application.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LYH.Core.Data.Models\LYH.Core.Data.Models.csproj">
-      <Project>{9ab2142f-ade0-406f-8de7-4b5d4daf05b5}</Project>
-      <Name>LYH.Core.Data.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LYH.Core.Data\LYH.Core.Data.csproj">
-      <Project>{7122BDDD-1DDE-488C-BC7E-D4E43C67D45D}</Project>
-      <Name>LYH.Core.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LYH.Core\LYH.Core.csproj">
-      <Project>{064A035E-A154-4AE2-8977-80AE43F894CC}</Project>
-      <Name>LYH.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LYH.Infrastructure.Data\LYH.Infrastructure.Data.csproj">
-      <Project>{8f62a93b-fa79-472f-a9fd-be9f25a7b040}</Project>
-      <Name>LYH.Infrastructure.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

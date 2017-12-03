@@ -1,9 +1,9 @@
-﻿using LYH.Core.Data.Models;
+﻿using LYH.Database.Core.Data.Models;
 using System.ComponentModel.Composition;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace LYH.Core
+namespace LYH.Database.Core
 {
 
     /// <summary>

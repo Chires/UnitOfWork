@@ -1,7 +1,7 @@
-﻿using LYH.Core.Data.Models;
+﻿using LYH.Database.Core.Data.Models;
 using LYH.Infrastructure.Data.EF;
 
-namespace LYH.Core.Data.Repositories
+namespace LYH.Database.Core.Data.Repositories
 {
 
     /// <summary>

@@ -1,13 +1,8 @@
 ﻿using LYH.Infrastructure.Data.DDD;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.Composition;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.Entity;
 
-namespace LYH.Core
+namespace LYH.Database.Core
 {
 
     /// <summary>

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LYH.Core.Data.Models
+namespace LYH.Database.Core.Data.Models
 {
     /// <summary>
     /// 实体类——角色信息
