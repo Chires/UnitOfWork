@@ -15,7 +15,7 @@ namespace LYH.Core.Data.Models
     ///  实体类——用户信息
     /// </summary>
     [Description("用户信息")]
-    public class Member : Entity
+    public class Member : BaseEntity
     {
         /// <summary>
         /// 获取或设置 用户编号

@@ -42,7 +42,7 @@ namespace LYH.Infrastructure.Data.EF
         /// <summary>
         ///     获取 当前实体的查询数据集
         /// </summary>
-        public IQueryable<TEntity> Entities
+        public virtual IQueryable<TEntity> Entities
         {
             get { return EFContext.Set<TEntity>(); }
         }
