@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LYH.Infrastructure.Data.EF
 {
-    /// <summary>
+    /// <summary> 
     ///     定义仓储模型中的数据标准操作
     /// </summary>
     /// <typeparam name="TEntity">动态实体类型</typeparam>
