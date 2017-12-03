@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Infrastructure（基础设施层）", "1-Infrastructure（基础设施层）", "{B577888E-22F0-4516-8A06-34AE7B07A188}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Core (业务核心层)", "2-Core (业务核心层)", "{FB11BC3C-DB60-4290-9A85-FB38F23F3DE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Application (站点应用层)", "3-Application (站点应用层)", "{69CA7C59-61E6-4AF4-BEF2-4AD3A431ECE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Presentation (展现层)", "4-Presentation (展现层)", "{BBF997D6-83C0-453D-B5BA-6456FDFC6010}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Api (外部接口层)", "5-Api (外部接口层)", "{2329B356-86D6-4454-9E71-F0F5D7E5E520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYH.Infrastructure.Data", "LYH.Infrastructure.Data\LYH.Infrastructure.Data.csproj", "{8F62A93B-FA79-472F-A9FD-BE9F25A7B040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYH.Core.Data", "LYH.Core.Data\LYH.Core.Data.csproj", "{7122BDDD-1DDE-488C-BC7E-D4E43C67D45D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYH.Core", "LYH.Core\LYH.Core.csproj", "{064A035E-A154-4AE2-8977-80AE43F894CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYH.Core.Data.Models", "LYH.Core.Data.Models\LYH.Core.Data.Models.csproj", "{9AB2142F-ADE0-406F-8DE7-4B5D4DAF05B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F62A93B-FA79-472F-A9FD-BE9F25A7B040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F62A93B-FA79-472F-A9FD-BE9F25A7B040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F62A93B-FA79-472F-A9FD-BE9F25A7B040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F62A93B-FA79-472F-A9FD-BE9F25A7B040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7122BDDD-1DDE-488C-BC7E-D4E43C67D45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7122BDDD-1DDE-488C-BC7E-D4E43C67D45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7122BDDD-1DDE-488C-BC7E-D4E43C67D45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7122BDDD-1DDE-488C-BC7E-D4E43C67D45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064A035E-A154-4AE2-8977-80AE43F894CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064A035E-A154-4AE2-8977-80AE43F894CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064A035E-A154-4AE2-8977-80AE43F894CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064A035E-A154-4AE2-8977-80AE43F894CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB2142F-ADE0-406F-8DE7-4B5D4DAF05B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB2142F-ADE0-406F-8DE7-4B5D4DAF05B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB2142F-ADE0-406F-8DE7-4B5D4DAF05B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB2142F-ADE0-406F-8DE7-4B5D4DAF05B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F62A93B-FA79-472F-A9FD-BE9F25A7B040} = {B577888E-22F0-4516-8A06-34AE7B07A188}
+		{7122BDDD-1DDE-488C-BC7E-D4E43C67D45D} = {FB11BC3C-DB60-4290-9A85-FB38F23F3DE8}
+		{064A035E-A154-4AE2-8977-80AE43F894CC} = {FB11BC3C-DB60-4290-9A85-FB38F23F3DE8}
+		{9AB2142F-ADE0-406F-8DE7-4B5D4DAF05B5} = {FB11BC3C-DB60-4290-9A85-FB38F23F3DE8}
+	EndGlobalSection
+EndGlobal
